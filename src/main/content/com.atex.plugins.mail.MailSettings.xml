@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template-definition version="1.0" xmlns="http://www.polopoly.com/polopoly/cm/app/xml">
+  <!--This file contains input template definitions -->
+  <input-template name="com.atex.plugins.mail.MailSettings" label="com.atex.plugins.mail.MailSettings">
+
+    <policy>com.atex.plugins.mail.MailSettingsPolicy</policy>
+    <editor>com.polopoly.cm.app.widget.OTopPolicyWidget</editor>
+    <viewer>com.polopoly.cm.app.widget.OTopPolicyWidget</viewer>
+
+    <type>AppConfig</type>
+
+    <field name="name" input-template="p.ContentName" label="com.atex.plugins.mail.MailSettings.name" required="true">
+    </field>
+
+    <field name="enabled" input-template="p.Checkbox" label="com.atex.plugins.mail.MailSettings.enabled">
+      <param name="checked">false</param>
+    </field>
+
+    <field name="smtpServerHostname" input-template="p.TextInput" label="com.atex.plugins.mail.MailSettings.smtpServerHostname" />
+    <field name="smtpServerPort" input-template="p.TextInput" label="com.atex.plugins.mail.MailSettings.smtpServerPort" />
+    <field name="smtpServerUsername" input-template="p.TextInput" label="com.atex.plugins.mail.MailSettings.smtpServerUsername" />
+    <field name="smtpServerPassword" input-template="p.TextInput" label="com.atex.plugins.mail.MailSettings.smtpServerPassword" />
+    <field name="smtpServerSocketTimeout" input-template="p.TextInput" label="com.atex.plugins.mail.MailSettings.smtpServerSocketTimeout" />
+    <field name="smtpServerConnectionTimeout" input-template="p.TextInput" label="com.atex.plugins.mail.MailSettings.smtpServerConnectionTimeout" />
+    <field name="smtpServerTLS" input-template="p.Checkbox" label="com.atex.plugins.mail.MailSettings.smtpServerTLS">
+      <param name="checked">false</param>
+    </field>
+    <field name="smtpServerSSL" input-template="p.Checkbox" label="com.atex.plugins.mail.MailSettings.smtpServerSSL">
+      <param name="checked">false</param>
+    </field>
+    <field name="smtpServerDebug" input-template="p.Checkbox" label="com.atex.plugins.mail.MailSettings.smtpServerDebug">
+      <param name="checked">false</param>
+    </field>
+    <field name="defaultFromAddress" input-template="p.TextInput" label="com.atex.plugins.mail.MailSettings.defaultFromAddress" />
+    <field name="validateRe" input-template="p.TextInput" label="com.atex.plugins.mail.MailSettings.validateRe" />
+
+  </input-template>
+
+</template-definition>

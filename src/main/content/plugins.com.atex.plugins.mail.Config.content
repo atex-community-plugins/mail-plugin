@@ -1,0 +1,17 @@
+id:.
+major:appconfig
+inputtemplate:com.atex.plugins.mail.Configuration
+securityparent:p.siteengine.Configuration.d
+component:polopoly.Content:name:Mail Configuration
+component:enabled:value:false
+component:settings/smtpServerHostname:value:smtpserver
+component:settings/smtpServerPort:value:25
+component:settings/smtpServerUsername:value:
+component:settings/smtpServerPassword:value:
+component:settings/smtpServerTLS:value:false
+component:settings/smtpServerSSL:value:false
+component:settings/smtpServerSocketTimeout:value:
+component:settings/smtpServerConnectionTimeout:value:
+component:settings/smtpServerDebug:value:false
+component:settings/defaultFromAddress:value:atex@example.com
+component:settings/validateRe:value:^.+@(?!\\.)\\S+\\.\\S+$

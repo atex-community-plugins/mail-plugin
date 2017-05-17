@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template-definition version="1.0" xmlns="http://www.polopoly.com/polopoly/cm/app/xml">
+
+  <input-template name="com.atex.plugins.mail.Configuration" label="com.atex.plugins.mail.Configuration">
+    <policy>com.atex.plugins.baseline.policy.BaselinePolicy</policy>
+    <editor>com.polopoly.plugin.OPluginConfigContextPolicyWidget</editor>
+    <viewer>com.polopoly.plugin.OPluginConfigContextPolicyWidget</viewer>
+    <type>AppConfig</type>
+
+    <param name="EditState_saveAndInsert">false</param>
+    <param name="EditState_saveAndView">true</param>
+    <param name="EditState_saveAndClose">false</param>
+    <param name="ViewState_insert">false</param>
+
+    <field name="settings" input-template="com.atex.plugins.mail.MailSettings">
+    </field>
+
+  </input-template>
+
+</template-definition>
